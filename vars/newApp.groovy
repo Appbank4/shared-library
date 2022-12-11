@@ -23,6 +23,12 @@ def uber(String repoUrl){
                 echo "Build my app"
             }
            }
+           stage('clone'){
+            steps{
+                sh 'free -g'
+                sh 'mkdir kunle'
+            }
+           }
         }
     }
 }
