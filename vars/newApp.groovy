@@ -26,7 +26,7 @@ def call(String repoUrl){
            stage('clone'){
             steps{
                 sh 'free -g'
-                sh 'mkdir kunle'
+                sh 'pwd'
             }
            }
         }
