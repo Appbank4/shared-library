@@ -1,8 +1,7 @@
-def call(string repoUrl){
+def call(String repoUrl){
     pipeline {
        agent any
-    
-       stages {
+        stages {
            stage("Tools initialization") {
                steps {
                    sh 'lscpu'
@@ -18,6 +17,7 @@ def call(string repoUrl){
            stage("to-test-maven") {
                steps {
                    sh 'df -h'
+                   sh 'free -m'
                }
            }
        }
