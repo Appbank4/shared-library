@@ -1,4 +1,4 @@
-def kunle(String repoUrl){
+def uber(String repoUrl){
     pipeline{
         agent any
         stages{
@@ -26,7 +26,6 @@ def kunle(String repoUrl){
            stage('clone'){
             steps{
                 sh 'free -g'
-                sh 'mkdir kunle'
             }
            }
         }
